@@ -17,7 +17,7 @@
 class SDS011 {
 	public:
 		SDS011(void);
-		void begin(HardwareSerial* serial);
+		void begin(Uart* serial);
 		int read(float *p25, float *p10);
 		void sleep();
 		void wakeup();
