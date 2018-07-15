@@ -96,7 +96,7 @@ void SDS011::wakeup() {
 	sds_data->flush();
 }
 
-void SDS011::begin(HardwareSerial* serial) {
+void SDS011::begin(Uart* serial) {
 	serial->begin(9600);
 	sds_data = serial;
 }
