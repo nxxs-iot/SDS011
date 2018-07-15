@@ -96,24 +96,9 @@ void SDS011::wakeup() {
 	sds_data->flush();
 }
 
-void SDS011::begin(uint8_t pin_rx, uint8_t pin_tx) {
-	_pin_rx = pin_rx;
-	_pin_tx = pin_tx;
-
-	SoftwareSerial *softSerial = new SoftwareSerial(_pin_rx, _pin_tx);
-
-	softSerial->begin(9600);
-
-	sds_data = softSerial;
-}
-
 void SDS011::begin(HardwareSerial* serial) {
 	serial->begin(9600);
 	sds_data = serial;
 }
 
-void SDS011::begin(SoftwareSerial* serial) {
-	serial->begin(9600);
-	sds_data = serial;
-}
 
