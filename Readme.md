@@ -1,8 +1,8 @@
 # SDS011  
   
 Arduino library for dust Sensor SDS011 (Nova Fitness Co.,Ltd)  
-This library uses only HardwareSerial to connect to the SDS011.  
-This library is based on https://github.com/ricki-z/SDS011
+This library uses Uart to connect to the SDS011 and is suitable for atmelsam (MKR)
+This library is based on https://github.com/ricki-z/SDS011 for avr/esp8266
   
 ## Usage
 
